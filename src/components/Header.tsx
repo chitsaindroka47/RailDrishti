@@ -46,23 +46,23 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Login Dropdown */}
+          {/* Dashboard Dropdown */}
           <div className="hidden md:block">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="default" className="bg-gradient-primary hover:shadow-glow transition-glow">
-                  Login <ChevronDown className="ml-2 h-4 w-4" />
+                  Dashboard <ChevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48 bg-background border border-border shadow-lg">
-                <DropdownMenuItem onClick={() => navigate('/login/controller')} className="cursor-pointer">
-                  Controller Login
+                <DropdownMenuItem onClick={() => navigate('/dashboard/controller')} className="cursor-pointer">
+                  Controller Dashboard
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => navigate('/login/admin')} className="cursor-pointer">
-                  Admin Login
+                <DropdownMenuItem onClick={() => navigate('/dashboard/admin')} className="cursor-pointer">
+                  Admin Dashboard
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => navigate('/login/observer')} className="cursor-pointer">
-                  Observer Login
+                <DropdownMenuItem onClick={() => navigate('/dashboard/observer')} className="cursor-pointer">
+                  Observer Dashboard
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

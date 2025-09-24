@@ -8,6 +8,9 @@ import NotFound from "./pages/NotFound";
 import LoginController from "./pages/LoginController";
 import LoginAdmin from "./pages/LoginAdmin";
 import LoginObserver from "./pages/LoginObserver";
+import ControllerDashboard from "./pages/ControllerDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
+import ObserverDashboard from "./pages/ObserverDashboard";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +25,9 @@ const App = () => (
           <Route path="/login/controller" element={<LoginController />} />
           <Route path="/login/admin" element={<LoginAdmin />} />
           <Route path="/login/observer" element={<LoginObserver />} />
+          <Route path="/dashboard/controller" element={<ControllerDashboard />} />
+          <Route path="/dashboard/admin" element={<AdminDashboard />} />
+          <Route path="/dashboard/observer" element={<ObserverDashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
